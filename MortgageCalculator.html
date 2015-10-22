@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mortgage Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Mortgage Calculator">
+  <meta name="author" content="Sambasiva Andaluri">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Mortgage Calculator</h1>
+    <h2></h2>
+    <p>Sambasiva Andaluri<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Mortgage Calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There are hundreds of mortgage calculators available on the internet. Some of them require Excel and some of them are very difficult to work with and often do not disclose how they calculated the values. </p>
+
+<p>Presenting a new Mortgage Calculator where anyone shopping for a home or an existing home owner can run what-if scenarios by setting up various parameters. Anyone with basic R knowledge can validate the code behind the calculator and tweak to add additional features</p>
+
+<h2>Input parameters</h2>
+
+<p>Mortgage calculator takes the following parameters and presents a what-if calculator where a user can change various parameters and see how it affects their monthly payment and how long it takes to pay off the loan.</p>
+
+<ul>
+<li>Property value : Value of the property in any currency.</li>
+<li>Downpayment : How much did you pay upfront as down payment for securing loan.</li>
+<li>Interest rate : Rate of interest for the loan.</li>
+<li>Loan term: Number of years overwhich the loan will be paid.</li>
+<li>Prepayment: Monthly additional principal payment.</li>
+</ul>
+
+<h2>Output</h2>
+
+<p>The following is a sample of the output generated for an example mortgage scenario with 250,000 as property value, with 25% downpayment, interest rate of 3.625% for 30 year loan with a monthly additional principal payment of 100. For each month my calculator shows monthly mortgage payment with details on both principal and interest. By varying these parameters a home owner or a prospecive buyer can run different scenarios or compare mortgage lenders etc.</p>
+
+<table><thead>
+<tr>
+<th align="right">Month</th>
+<th align="right">Start Balance</th>
+<th align="right">Principal</th>
+<th align="right">Prepay</th>
+<th align="right">Interest</th>
+<th align="right">Total</th>
+<th align="right">End Balance</th>
+</tr>
+</thead><tbody>
+<tr>
+<td align="right">1</td>
+<td align="right">187500</td>
+<td align="right">389</td>
+<td align="right">100</td>
+<td align="right">566</td>
+<td align="right">955</td>
+<td align="right">187111</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="right">187111</td>
+<td align="right">390</td>
+<td align="right">100</td>
+<td align="right">565</td>
+<td align="right">955</td>
+<td align="right">186721</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="right">186721</td>
+<td align="right">391</td>
+<td align="right">100</td>
+<td align="right">564</td>
+<td align="right">955</td>
+<td align="right">186330</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="right">186330</td>
+<td align="right">392</td>
+<td align="right">100</td>
+<td align="right">563</td>
+<td align="right">955</td>
+<td align="right">185938</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="right">185938</td>
+<td align="right">393</td>
+<td align="right">100</td>
+<td align="right">562</td>
+<td align="right">955</td>
+<td align="right">185545</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="right">185545</td>
+<td align="right">395</td>
+<td align="right">100</td>
+<td align="right">560</td>
+<td align="right">955</td>
+<td align="right">185150</td>
+</tr>
+</tbody></table>
+
+<h2>Conclusion</h2>
+
+<p>In summary, my mortgage calculator offers a simple approach to calculate monthly payments and run what-if analysis quickly to estimate monthly payments.</p>
+
+<p>References:</p>
+
+<p>Code and formulas were borrowed from the following sites to help develop this calculator:</p>
+
+<p><a href="http://codereview.stackexchange.com/questions/60097/calculation-of-mortgage-repayments">http://codereview.stackexchange.com/questions/60097/calculation-of-mortgage-repayments</a></p>
+
+<p><a href="http://www.hughcalc.org/formula.php">http://www.hughcalc.org/formula.php</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Mortgage Calculator'>
+         1
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
